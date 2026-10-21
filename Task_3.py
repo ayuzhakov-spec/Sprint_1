@@ -1,4 +1,3 @@
-
 world_champions = {
     2002: 'Бразилия',
     2006: 'Италия',
@@ -7,7 +6,7 @@ world_champions = {
     2018: 'Франция',
 }
 
-world_champions = 'Аргентина'
+world_champions[2022] = 'Аргентина'
 
 for year, champion in world_champions.items():
     print(f'{year} - {champion}')
