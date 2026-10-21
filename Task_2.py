@@ -3,13 +3,9 @@ class Tester:
         self.name = name
         self.deadline = True
 
-    def work_hard(self, deadline=None):
-        if deadline is not None:
-            check_deadline = deadline
-        else:
-            check_deadline = self.deadline
-
-        if check_deadline:
+    def work_hard(self, deadline):
+        # Просто используем переданный аргумент, как и просили
+        if deadline:
             print(self.name, 'Что ж, ещё часок поработаю!')
         else:
             print(self.name, 'Можно отдыхать')
