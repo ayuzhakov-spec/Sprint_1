@@ -4,10 +4,11 @@ class TestCase:
         self.result = None
 
     def set_step(self, step_number, step_text):
-        self.steps[step_number] = step_text
+        if step_number in self.steps:
+           del self.steps[step_number]
 
     def delete_step(self, step_number):
-        self.steps.pop(step_number, None)
+        self.steps.pop(step_number, None
 
     def set_result(self, result):
         self.result = result
